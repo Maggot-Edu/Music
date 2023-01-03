@@ -1,0 +1,23 @@
+{
+  "name": "music",
+  "version": "1.0.0",
+  "description": "Gulp, SASS y HTML",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maggot-Edu/Music.git"
+  },
+  "keywords": [
+    "SASS",
+    "Gulp"
+  ],
+  "author": "Eduard Badoyan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Maggot-Edu/Music/issues"
+  },
+  "homepage": "https://github.com/Maggot-Edu/Music#readme"
+}
