@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/Maggot-Edu/Music/issues"
   },
-  "homepage": "https://github.com/Maggot-Edu/Music#readme"
+  "homepage": "https://github.com/Maggot-Edu/Music#readme",
+  "devDependencies": {
+    "sass": "^1.57.1"
+  }
 }
