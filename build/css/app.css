@@ -1,5 +1,8 @@
-body {
-  background-color: rgb(206, 109, 109);
+header {
+  color: rgb(233, 24, 24);
 }
 
-/*# sourceMappingURL=app.css.map */
+h1 {
+  color: rgb(218, 76, 206);
+  text-transform: uppercase;
+}
