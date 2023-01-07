@@ -8,7 +8,7 @@ const plumber = require('gulp-plumber');
 const cache = require('gulp-cache');
 const imagemin = require('gulp-imagemin');
 const avif = require('gulp-avif');
-//const webp = require('gulp-webp');
+const webp = require('gulp-webp');
 
 function css(done) {
    
@@ -60,13 +60,22 @@ function versionAvif(done) {
 //     done();
 // }
 
+function javascript(done) {
+    src('src/js/**/*.js')
+        .pipe(dest('build/js'));
+
+    done();
+}
+
 function dev(done) {
     watch('src/scss/**/*.scss', css);
+    watch('src/js/**/*.js', javascript);
     done();
 }
 
 exports.css = css;
+exports.javascript = javascript;
 exports.imagenes = imagenes;
-// exports.versionWebp = versionWebp;
+//exports.versionWebp = versionWebp;
 exports.versionAvif = versionAvif;
-exports.dev = parallel(imagenes, versionAvif, dev);
+exports.dev = parallel(imagenes, versionAvif, javascript, dev);

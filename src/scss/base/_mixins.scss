@@ -37,3 +37,8 @@
     grid-template-columns: repeat($columnas, 1fr);
     gap: $espaciado;
 }
+@mixin reset-listas {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}

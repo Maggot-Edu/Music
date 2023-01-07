@@ -17,9 +17,9 @@
             <h1>Rock & EDM</h1>
 
             <nav class="nav-principal">
-                <a href="#">Line Up</a>
-                <a href="#">Galería</a>
-                <a href="#">Entradas</a>
+                <a href="#lineup">Line Up</a>
+                <a href="#galeria">Galería</a>
+                <a href="#entradas">Entradas</a>
             </nav>
         </div>
     </header>
@@ -53,7 +53,7 @@
         </div>
     </section>
 
-    <section class="lineup">
+    <section id="lineup" class="lineup">
         <h3>Line UP</h3>
         <p class="dia">Viernes</p>
         <div class="contenedor escenarios-contenecdor">
@@ -159,5 +159,57 @@
         </div> <!-- .escenarios-contenecdor-->
     </section>
 
+    <section id="galeria" class="contenedor galeria">
+        <h3>Galería</h3>
+
+        <ul class="galeria-imagenes">
+
+        </ul>
+    </section>
+
+    <section id="entradas" class="entradas bg-verde">
+        <h3>Entradas</h3>
+
+        <div class="contenedor contenedos-entradas">
+            <div class="basico pase">
+                <p class="pase-nombre">Pase de 1 Día</p>
+                <header class="pase-header">
+                    <p>Incluye</p>
+                </header>
+                <div class="pase-body">
+                    <ul>
+                        <li>Acceso a ambos escenarios</li>
+                        <li>Comida y Bebida</li>
+                    </ul>
+                </div>
+                <footer class="pase-footer">
+                    <p>150€</p>
+                </footer>
+            </div>
+            <div class="vip pase">
+                <p class="pase-nombre">Pase de 2 Días</p>
+                <header class="pase-header">
+                    <p>Incluye</p>
+                </header>
+                <div class="pase-body">
+                    <ul>
+                        <li>Acceso a ambos escenarios</li>
+                        <li>Comida y Bebida</li>
+                        <li>Camiseta del evento</li>
+                        <li>Acceso VIP</li>
+                    </ul>
+                </div>
+                <footer class="pase-footer">
+                    <p>250€</p>
+                </footer>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <p>Rock & EDM Festival, Todos los derechos reservados</p>
+    </footer>
+
+    <script src="build/js/app.js"></script>
 </body>
 </html>
