@@ -3,8 +3,26 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function iniciarApp() {
+    navFija();
     crearGaleria();
     scrollNav();
+}
+
+function navFija(){
+    const barra = document.querySelector('.header');
+    const sobreFesti = document.querySelector('.sobre-festival');
+    const body = document.querySelector('body');
+
+    window.addEventListener('scroll', function() {
+
+        if (sobreFesti.getBoundingClientRect().bottom < 0 ) {
+            barra.classList.add('fijo');
+            body.classList.add('body-scroll');
+        } else {
+            barra.classList.remove('fijo');
+            body.classList.remove('body-scroll');
+        }
+    });
 }
 
 function scrollNav() {
